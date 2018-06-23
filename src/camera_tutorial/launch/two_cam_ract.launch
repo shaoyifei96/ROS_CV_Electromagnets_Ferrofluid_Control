@@ -1,0 +1,13 @@
+<launch> 
+	<node pkg="image_transport_tutorial" type="my_publisher" name="top_cam_pub" required="true" args="1" output="screen"/>
+	<node pkg="image_transport_tutorial" type="my_publisher" name="bottom_cam_pub" required="true" args="2" output="screen"/>
+	<!--
+	<node pkg="image_proc" type="image_proc" name="top_rectifier" respawn="true" ns="camera1" output="screen"/>
+	<node pkg="image_proc" type="image_proc" name="bottom_rectifier" respawn="true" ns="camera2" output="screen"/>
+	-->
+	<node pkg="image_transport_tutorial" type="my_subscriber" name="top_cam_sub" respawn="true" args="1" output="screen"/>
+	<node pkg="image_transport_tutorial" type="my_subscriber" name="bottom_cam_sub" respawn="true" args="2" output="screen"/>
+
+	<node pkg="image_transport_tutorial" type="angle_pos_sub" name="calc_viz" respawn="true" output="screen"/>
+	<node pkg="rviz" type="rviz" name="rviz" respawn="true" output="screen"/>
+</launch>

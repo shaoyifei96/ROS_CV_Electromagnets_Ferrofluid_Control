@@ -1,0 +1,8 @@
+prefix=/home/cofphe/catkin_ws/install
+
+Name: ferro_tracking_control
+Description: Description of ferro_tracking_control
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/cofphe/catkin_ws/install/lib 
+Requires: 
