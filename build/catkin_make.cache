@@ -1,2 +1,0 @@
-camera_info_manager:camera_tutorial:ferro_tracking_control:fluid_controller
--DCATKIN_DEVEL_PREFIX=/home/cofphe/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cofphe/catkin_ws/install -G Unix Makefiles
