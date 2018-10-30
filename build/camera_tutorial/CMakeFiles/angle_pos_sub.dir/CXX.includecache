@@ -37,6 +37,8 @@ image_transport_tutorial/tracking2Dmsg.h
 /home/cofphe/catkin_ws/src/camera_tutorial/src/image_transport_tutorial/tracking2Dmsg.h
 visualization_msgs/Marker.h
 -
+geometry_msgs/Point.h
+-
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

@@ -6,5 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(ferro_tracking_control)
+subdirs(fluid_controller)
 subdirs(camera_info_manager)
 subdirs(camera_tutorial)

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(image_transport_tutorial)
 add_compile_options(-std=c++11)
-find_package(catkin REQUIRED COMPONENTS  cv_bridge std_msgs image_transport message_generation sensor_msgs geometry_msgs camera_info_manager)
+find_package(catkin REQUIRED COMPONENTS  roscpp rospy phidgets_api cv_bridge std_msgs image_transport message_generation sensor_msgs geometry_msgs camera_info_manager )
 
 # add the resized image message
 add_message_files(
@@ -10,7 +10,7 @@ add_message_files(
 )
 generate_messages(DEPENDENCIES std_msgs sensor_msgs geometry_msgs)
 
-catkin_package(CATKIN_DEPENDS cv_bridge  image_transport message_runtime std_msgs sensor_msgs geometry_msgs)
+catkin_package(CATKIN_DEPENDS  roscpp rospy cv_bridge  image_transport message_runtime std_msgs sensor_msgs geometry_msgs)
 
 find_package(OpenCV)
 

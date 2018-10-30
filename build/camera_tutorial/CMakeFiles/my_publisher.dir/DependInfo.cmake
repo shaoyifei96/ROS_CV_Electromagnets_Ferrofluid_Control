@@ -21,9 +21,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/cofphe/catkin_ws/src/camera_tutorial/include"
   "/home/cofphe/catkin_ws/src/camera_info_manager/include"
   "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.

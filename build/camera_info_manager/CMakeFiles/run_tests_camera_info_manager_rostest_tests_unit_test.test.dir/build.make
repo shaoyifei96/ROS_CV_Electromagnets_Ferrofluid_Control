@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/cofphe/catkin_ws/build
 include camera_info_manager/CMakeFiles/run_tests_camera_info_manager_rostest_tests_unit_test.test.dir/progress.make
 
 camera_info_manager/CMakeFiles/run_tests_camera_info_manager_rostest_tests_unit_test.test:
-	cd /home/cofphe/catkin_ws/build/camera_info_manager && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/cofphe/catkin_ws/build/test_results/camera_info_manager/rostest-tests_unit_test.xml /opt/ros/kinetic/share/rostest/cmake/../../../bin/rostest\ --pkgdir=/home/cofphe/catkin_ws/src/camera_info_manager\ --package=camera_info_manager\ --results-filename\ tests_unit_test.xml\ --results-base-dir\ "/home/cofphe/catkin_ws/build/test_results"\ /home/cofphe/catkin_ws/src/camera_info_manager/tests/unit_test.test\ 
+	cd /home/cofphe/catkin_ws/build/camera_info_manager && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/cofphe/catkin_ws/build/test_results/camera_info_manager/rostest-tests_unit_test.xml "/opt/ros/kinetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/cofphe/catkin_ws/src/camera_info_manager --package=camera_info_manager --results-filename tests_unit_test.xml --results-base-dir \"/home/cofphe/catkin_ws/build/test_results\" /home/cofphe/catkin_ws/src/camera_info_manager/tests/unit_test.test "
 
 run_tests_camera_info_manager_rostest_tests_unit_test.test: camera_info_manager/CMakeFiles/run_tests_camera_info_manager_rostest_tests_unit_test.test
 run_tests_camera_info_manager_rostest_tests_unit_test.test: camera_info_manager/CMakeFiles/run_tests_camera_info_manager_rostest_tests_unit_test.test.dir/build.make

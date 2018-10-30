@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"image_transport_tutorial\"
 
-CXX_INCLUDES = -I/home/cofphe/catkin_ws/devel/include -I/home/cofphe/catkin_ws/src/camera_tutorial/include -I/home/cofphe/catkin_ws/src/camera_info_manager/include -I/opt/ros/kinetic/include -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/cofphe/catkin_ws/devel/include -I/home/cofphe/catkin_ws/src/camera_tutorial/include -I/home/cofphe/catkin_ws/src/camera_info_manager/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
 

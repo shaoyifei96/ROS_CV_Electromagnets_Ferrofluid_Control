@@ -118,6 +118,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/cofphe/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/cofphe/catkin_ws/build/ferro_tracking_control/cmake_install.cmake")
+  include("/home/cofphe/catkin_ws/build/fluid_controller/cmake_install.cmake")
   include("/home/cofphe/catkin_ws/build/camera_info_manager/cmake_install.cmake")
   include("/home/cofphe/catkin_ws/build/camera_tutorial/cmake_install.cmake")
 

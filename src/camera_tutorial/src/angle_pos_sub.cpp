@@ -5,6 +5,8 @@
 #include <array>
 #include "image_transport_tutorial/tracking2Dmsg.h"
 #include <visualization_msgs/Marker.h>
+#include <geometry_msgs/Point.h>
+
 class analyzerListener
 {
 	public:
@@ -26,6 +28,7 @@ class analyzerListener
 		double bom_tantheta;
 
 		ros::Publisher pub;
+		ros::Publisher pub2;
 		visualization_msgs::Marker points;
 
   	analyzerListener(){
@@ -93,12 +96,13 @@ class analyzerListener
 	points.color.g = 1.0f; points.color.a = 1.0;
 	geometry_msgs::Point p;
 	if(std::isfinite(D_x) && std::isfinite(D_y) && std::isfinite(D_z) ){
-	p.x = 100.*D_x;
-	p.y = 100.*D_y;
-	p.z = 100.*D_z;
+	p.x = 100.* 0.5 * (D_x + E_x);
+	p.y = 100.* 0.5 * (D_y + E_y);
+	p.z = 100.* 0.5 * (D_z + E_z);
 	}
 	points.points.push_back(p);
 	pub.publish(points);
+	pub2.publish(p);
 
   }
   void print_vec(std::array<double, 3> c){
@@ -155,6 +159,8 @@ int main(int argc, char **argv)
   ros::Subscriber sub2 = nh.subscribe("camera2/cv_image_pos", 1,  &analyzerListener::bom_cam_callback, &ana_ls);
   //image_ls.pub = nh.advertise<geometry_msgs::Point>("camera"+cam_num+"/cv_image_pos", 1);
   ana_ls.pub = nh.advertise<visualization_msgs::Marker>("visualization_marker", 10);
+  ana_ls.pub2 = nh.advertise<geometry_msgs::Point>("particle_pos", 10);
+
   ros::spin();
 }
 

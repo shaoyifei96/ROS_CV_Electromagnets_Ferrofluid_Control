@@ -90,6 +90,8 @@ my_subscriber_EXTERNAL_OBJECTS =
 
 /home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: camera_tutorial/CMakeFiles/my_subscriber.dir/src/my_subscriber.cpp.o
 /home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: camera_tutorial/CMakeFiles/my_subscriber.dir/build.make
+/home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: /opt/ros/kinetic/lib/libphidgets_api.so
+/home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: /opt/ros/kinetic/lib/libphidget21.so
 /home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: /opt/ros/kinetic/lib/libcv_bridge.so
 /home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/cofphe/catkin_ws/devel/lib/image_transport_tutorial/my_subscriber: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
