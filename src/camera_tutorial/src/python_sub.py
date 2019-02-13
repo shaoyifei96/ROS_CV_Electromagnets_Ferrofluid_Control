@@ -311,7 +311,7 @@ def listener():
     # #This call may be harmlessly removed
     # PrintEventDescriptions()
     
-  
+  #this is now two_mag_push branch
         
 
     rospy.init_node('python_sub', anonymous=True)
