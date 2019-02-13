@@ -58,7 +58,8 @@ public:
         //reigion = cv::selectROI("original",imgOriginal,0,0);
         if (cam_num == "1") reigion = cv::Rect( cv::Point(135,133), cv::Point(572,458) );
         else reigion = cv::Rect( cv::Point(187,97), cv::Point(492,400) );
-        reigion = cv::Rect( cv::Point(187,97), cv::Point(492,400) );//comment this line for two camera
+//        reigion = cv::Rect( cv::Point(187,97), cv::Point(492,400) );//bottom camera acrylic box setting
+        reigion = cv::Rect( cv::Point(250,160), cv::Point(420,350) );//bottom camera acrylic box setting
         cv::Mat crop_size_ref = imgOriginal(reigion);
         imgLines = cv::Mat::zeros( reigion.height, reigion.width, CV_8UC3 );
         cv_pt.ny = reigion.height;
